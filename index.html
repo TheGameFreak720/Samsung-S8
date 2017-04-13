@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Samsung S8</title>
+   <link rel="icon" href="img/icon.png">
+   <link rel="stylesheet" href="css/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+ <!-- navbar -->
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+   <div class="container-fluid">
+     <div class="navbar-header">
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png"></a>
+     </div>
+     <div class="collapse navbar-collapse" id="myNavbar">
+       <ul class="nav navbar-nav">
+         <li class="active font"><a href="#world">Home</a></li>
+         <li><a href="#design">Design</a></li>
+         <li><a href="#performance">Performance</a></li>
+         <li><a href="#preorder">Preorder</a></li>
+       </ul>
+    </div>
+   </div>
+ </nav>
+
+ <!-- Discover the world -->
+ <div class="container-fluid" id="world">
+   <p class="title">Discover The World</p>
+   <img class="img-responsive phone" src="img/phone.png">
+ </div>
+
+ <!-- Design -->
+ <div class="container-fluid" id="design">
+   <p class="txt">Introducing the stunning Infinity Display</p>
+   <p class="txt">The revolutionary design of the Galaxy S8 and S8+ begins from the inside out.
+     We rethought every part of the phone's layout to break through the confines of the smartphone screen.
+     So all you see is pure content and no bezel. It's the biggest, most immersive screen on a Galaxy smartphone of this size.
+     And it's easy to hold in one hand.</p>
+
+   <div class="row">
+     <div class="col-sm-4">
+       <p class="txt">The Infinity Display has an incredible end-to-end screen that spills over the phone’s sides,
+         forming a completely smooth, continuous surface with no bumps or angles. It’s pure, pristine, uninterrupted glass.
+         And it takes up the entire front of the phone, flowing seamlessly into the aluminum shell. The result is a beautifully curved,
+         perfectly symmetrical, singular object.</p>
+     </div>
+     <div class="col-sm-8">
+       <img class="img-responsive galaxy" src="img/galaxy.jpg">
+     </div>
+   </div>
+ </div>
+
+ <!-- Performance -->
+ <div class="container-fluid" id="performance">
+   <p class="txt white">Performance</p>
+   <img class="img-responsive droid" src="img/droid.png">
+   <p class="txt white">You never really stop using your phone. That's why Galaxy S8 and S8+ are driven by the world's first
+     10nm processor. It's fast and powerful and increases battery efficiency. Plus, there's the ability to expand storage, and to work
+     through rain and dust with IP68-rated performance.</p>
+ </div>
+
+ <!-- Preorder -->
+ <div class="container-fluid" id="preorder">
+   <p class="txt white">Preorder yours now</p>
+   <button type="button" class="btn btn-info btn-lg">Preorder</button>
+   <p class="txt white">&copy Luis M. Alvarez 2017</p>
+ </div>
+
+ <script>
+ $(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+   });
+ });
+ </script>
+
+
+</body>
+
+</html>

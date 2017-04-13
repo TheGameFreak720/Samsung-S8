@@ -1,0 +1,82 @@
+/* General */
+
+* {
+  font-family: 'Oswald', sans-serif;
+}
+
+.title {
+  margin: 0;
+  margin-top: 70px;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+
+.txt {
+  margin: 0;
+  margin-top: 100px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.white {
+  color: white;
+}
+
+/* Navbar */
+
+.logo {
+  width: 100px;
+  height: 20px;
+}
+
+/* Discover the world */
+
+#world {
+  background-image: url(../img/space.jpg);
+  background-position: center;
+  height: 700px;
+}
+
+.phone {
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+/* Design */
+
+#design {
+  margin: 0;
+}
+
+.galaxy {
+  margin-top: 50px;
+  float: right;
+}
+
+/* Performance */
+
+#performance {
+  background-image: url(../img/car.jpg);
+  background-position: center;
+}
+
+.droid {
+  margin: 0 auto;
+  margin-top: 70px;
+  width: 300px;
+  height: 300px;
+}
+
+/*Preorder*/
+
+#preorder {
+  margin: 0;
+  background-image: url(../img/pre.jpg);
+  background-position: center;
+}
+
+.btn {
+  margin-left: 740px;
+  margin-top:100px;
+}
