@@ -33,7 +33,7 @@
 /* Discover the world */
 
 #world {
-  background-image: url(../img/space.jpg);
+  background-image: url(./img/space.jpg);
   background-position: center;
   height: 700px;
 }
@@ -57,7 +57,7 @@
 /* Performance */
 
 #performance {
-  background-image: url(../img/car.jpg);
+  background-image: url(./img/car.jpg);
   background-position: center;
 }
 
@@ -72,11 +72,14 @@
 
 #preorder {
   margin: 0;
-  background-image: url(../img/pre.jpg);
+  background-image: url(./img/pre.jpg);
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .btn {
-  margin-left: 740px;
-  margin-top:100px;
+  display: block;
+  margin: 1rem 0;
 }
